@@ -58,7 +58,6 @@ ol {
   grid-template-columns: minmax(auto, 741px) minmax(auto, 399px);
   align-items: end;
   max-width: 1140px;
-  max-height: 534px;
   gap: 30px;
 }
 
@@ -117,6 +116,10 @@ ol {
   cursor: pointer;
 }
 
+.content__list-item:active {
+  background-color: #545050;
+}
+
 .content__card-link:focus {
   outline: none;
 }
@@ -160,16 +163,15 @@ ol {
   padding-top: 5px;
 }
 
-.content__accent {
-  color: #545050;
-}
-
 .search-form__fieldset-title {
   font-size: 18px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
-  letter-spacing: 0%;
   margin-bottom: 5px;
+}
+
+.content__accent {
+  color: #545050;
 }
 
 .content__card-link {
@@ -182,7 +184,6 @@ ol {
   font-family: Oswald, sans-serif;
   font-weight: 700;
   line-height: 100%;
-  letter-spacing: 0%;
   text-transform: uppercase;
   max-width: 196px;
   overflow: hidden;
@@ -195,7 +196,6 @@ ol {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   line-height: 16.2px;
-  letter-spacing: 0%;
   max-width: 196px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -205,7 +205,6 @@ ol {
   font-size: 18px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
-  letter-spacing: 0%;
   border-bottom: 1px solid transparent;
 }
 
@@ -221,9 +220,21 @@ ol {
 }
 
 /* Стилизация чекбосов */
+
+.search-form__label {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.search-form__checkbox {
+  appearance: none;
+}
+
 .search-form__fieldset {
   border: 0;
 }
+
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
@@ -252,12 +263,6 @@ ol {
   opacity: 1;
 }
 
-.search-form__label {
-  display: flex;
-  align-items: center;
-  width: fit-content;
-}
-
 .search-form__label:hover {
   cursor: pointer;
 }
@@ -278,7 +283,6 @@ ol {
   font-size: 18px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
-  letter-spacing: 0%;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
 }
@@ -287,7 +291,6 @@ ol {
   font-size: 18px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
-  letter-spacing: 0%;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -316,7 +319,6 @@ ol {
   font-size: 18px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
-  letter-spacing: 0%;
   text-align: center;
 }
 
