@@ -114,6 +114,7 @@ ol {
 .content__list-item:hover {
   text-decoration: underline;
   text-decoration-skip-ink: none;
+  cursor: pointer;
 }
 
 .content__card-link:focus {
@@ -329,6 +330,7 @@ ol {
 
 .button:hover {
   text-decoration: underline;
+  text-decoration-skip-ink: none;
   cursor: pointer;
 }
 
